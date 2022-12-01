@@ -50,7 +50,7 @@ class MainActivity : AppCompatActivity() {
         sqlText=findViewById(R.id.sql_text)
         sharedPreferences=getSharedPreferences("DataMy", MODE_PRIVATE)
         sqLiteDatabase=openOrCreateDatabase("myDatabase", MODE_PRIVATE,null)
-        sqLiteDatabase.execSQL("create table if not exists Parivahan2(name varchar(50))")
+        sqLiteDatabase.execSQL("create table if not exists Encryption(name varchar(50))")
 
         editor=sharedPreferences.edit()
         enCryptor = EnCryptor()
@@ -90,7 +90,7 @@ class MainActivity : AppCompatActivity() {
                 array, enCryptor.getIv()))
 
                 //  var sql=
-            var cursor:Cursor=sqLiteDatabase.rawQuery("select * from Parivahan2",null)
+            var cursor:Cursor=sqLiteDatabase.rawQuery("select * from Encryption",null)
             cursor.moveToLast()
             var name=cursor.getString(0)
             val name2Sql: ByteArray = Base64.decode(name, Base64.DEFAULT)
@@ -126,7 +126,7 @@ class MainActivity : AppCompatActivity() {
 
             editor.putString("test",saveThis).apply()
 
-            sqLiteDatabase.execSQL("insert into Parivahan2 values('$saveThis')")
+            sqLiteDatabase.execSQL("insert into Encryption values('$saveThis')")
 
             // encrypted_text.setText(Base64.encodeToString(encryptedText, Base64.DEFAULT))
                 encrypted_text.setText(encryptedText.toString())
