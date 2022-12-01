@@ -1,5 +1,5 @@
 # AndroidKeyStoreENc
- Encrypt Sqlite or Shared prefernces Data with Android KEy Store
+ Encrypt Sqlite or Shared preferences Data with Android Key Store
  
  This application is a demo for encrypting and decrypting Sqlite Database
  or Shared Preferences with Android Key Store.
