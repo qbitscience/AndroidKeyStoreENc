@@ -28,11 +28,11 @@
         android:id="@+id/encrypted_text"
         android:text="Encrypted Text"
         android:textSize="50sp"/>
-    <TextView
+     <TextView
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="90dp"
         android:id="@+id/stored_text"
-        android:text="Shared Stored Data"
+        android:text="Shared Stored"
         android:textSize="40sp"/>
     <TextView
         android:layout_width="match_parent"
