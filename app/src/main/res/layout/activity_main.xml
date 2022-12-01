@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:id="@+id/entry"
+    android:hint="Enter WHat ??"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Encrypt"
+        android:id="@+id/encrypt"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/decrypt"
+        android:text="Decrypt"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/encrypted_text"
+        android:text="Encrypted Text"
+        android:textSize="50sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/stored_text"
+        android:text="Shared Stored Data"
+        android:textSize="40sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/decrypted_text"
+        android:text="Decrypted Text"
+        android:textSize="50sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/sql_text"
+        android:text="sql Text"
+        android:textSize="50sp"/>
+
+
+
+</LinearLayout>
